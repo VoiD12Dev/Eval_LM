@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion</title>
+    <link rel="stylesheet" href="/css/inscripcion.css">
+    <link rel="stylesheet" href="/css/comun.css">
+</head>
+<body>
+    <header>
+        
+        <img id="logo1" src="/img/logo1.png" alt="logo1" height="100" width="150">
+
+        <h1>XXI CONGRESO DE <br> PERIODISMO DEL CEEDCV</h1>
+
+        <p class="toright">
+            Valencia,11 al 14 de Marzo de 2023 <br>
+            Palacio de Congresos
+        </p>
+
+        <nav><p> <a id="link1" href="index.html">Inicio</a> <a id="link2" href="programacion.html">Programacion</a>  <a id="link3" href="inscripcion.html">Registro de las joranadas</a></p></nav>
+
+    </header>
+    
+    <section>
+
+        <form action="" method="get">
+            <fieldset>
+
+                <legend><h2>Inscripcion a las jornadas de periodismo</h2></legend>
+
+                <fieldset  class="fieldtopbot">
+
+                    <p>
+                        <h4>Nombre completo:</h4>
+                    </p>
+
+                    <p>
+                        Nombre <span class="arterisco">*</span>: <input type="text" id="nombre" name="nombre" maxlength="15" required>
+                    </p>
+
+                    <p>
+                        Apellidos <span class="arterisco">*</span>: <input type="text" id="apellidos" name="apellidos" maxlength="25" required>
+                    </p>
+
+                </fieldset>
+
+                <fieldset class="fieldtopbot">
+
+                    <p>
+                        <h4>Direccion:</h4>
+                    </p>
+
+                    <p>
+                        Calle: <input type="text" id="calle" name="calle" maxlength="50" >
+                    </p>
+
+                    <p>
+                        Localidad: <input type="text" id="localidad" name="localidad" maxlength="35">
+                    </p>
+
+                    <p>
+                        Provincia: <input type="text" id="provincia" name="provincia" maxlength="20">
+                    </p>
+
+                    <p>
+                        Codigo postal: <input type="text" id="cpostal" name="cpostal" maxlength="5">
+                    </p>
+
+                </fieldset>
+
+                <fieldset class="fieldtopbot">
+
+                    <p>
+                        <h4>Informacion complementaria:</h4>
+                    </p>
+
+                    <p>
+                        <form>
+                            <label for="email">Email <span class="arterisco">*</span>:</label>
+                            <input type="email" id="email" name="email" required>
+                        </form>
+                    </p>
+
+                    <p>
+                        DNI <span class="arterisco">*</span>: <input type="text" name="dni" id="dni" maxlength="9" required>
+                    </p>
+
+                    <p>
+                        Telefono <span class="arterisco">*</span>: <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" maxlength="9" required>
+                    </p>
+
+                    <form>
+                        <p>
+                            Sexo:
+                            <input type="radio" id="hombre" name="sexo" value="hombre">
+                            <label for="hombre">Hombre</label>
+                            <input type="radio" id="mujer" name="sexo" value="mujer">
+                            <label for="mujer">Mujer</label>
+                        </p>
+                    </form>
+
+                    <form>
+                        <p>
+                            Pase de prensa:
+                            <input type="radio" name="pase" id="si" value="si">
+                            <label for="si">Si</label>
+                            <input type="radio" name="pase" id="no" value="no">
+                            <label for="no">No</label>
+                        </p>
+                    </form>
+
+                    <p>
+                    <label for="observacions">Observaciones:</label>
+                    </p>
+                    <textarea name="observaciones" id="observaciones" cols="60" rows="10" ></textarea>
+
+                </fieldset>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p id="textfoot">
+            Actividad realizada por Miguel Ferrandiz Miro, para la asignatura de lenguaje de marcas <br>Primer trimestre 2022/23
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Montserrat&display=swap');
+
+table {
+    border-collapse: separate;
+    text-align: left;
+}
+
+.tred{
+    background-color: red;
+}
+
+tfoot {
+    text-align: center;
+}
+
+#tabcen {
+    text-align: center;
+    background-color: rgb(45, 49, 83);
+}
+
+.rclar {
+    background-color: tomato;
+}
+
+.bcol {
+    border: 2px solid aqua;
+}
+
+#boor {
+    border: 2px solid aqua;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+#sec3 {
+    background-color: darkcyan;
+    font-family: 'Dosis';
+}
+
+#table1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}

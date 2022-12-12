@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Montserrat&display=swap');
+
+fieldset {
+    border-color: rgb(12, 12, 210);
+    background-color: rgba(135, 207, 235, 0.174);
+}
+
+fieldset h2 {
+    color: orange;
+}
+
+#calle{
+    width: 400px;
+}
+
+#email {
+    width: 300px;
+}
+
+.arterisco {
+    color: red;
+}
+
+.fieldtopbot {
+    border-left: 0ch;
+    border-right: 0ch;
+}
+
+footer{
+    margin-top: 30px;
+}

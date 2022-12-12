@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Montserrat&display=swap');
+
+#h2body {
+    text-align: center;
+}
+
+#art1, #art2 {
+    background-color:rgb(16, 99, 134);
+}
+#arteven{
+    text-align: center;
+}
+
+table {
+    margin-left: 200px;
+    text-align: left;
+}
+
+#tab1 {
+    background-color: rgb(16, 99, 134);
+    height: 250px;
+}
+
+.fmid {
+    display: flex;
+    justify-content: center;
+}
+
+#parbody {
+    font-family: 'Dosis';
+    font-size: 14pt;
+    text-align: justify;
+    line-height: 25px;
+    width: 400px;
+    height: 300px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+#midvid {
+    margin-left: 30px;
+}
+
+.botdiv {
+    display: flex;
+    justify-content: center;
+}
+
+#parr1 {
+    margin-right: 10px;
+    margin-top: 20px;
+    line-height: 15px;
+}
+
+#parr2 {
+    margin-top: 20px;
+    line-height: 15px;
+}
+
+#parr1 h2 {
+    text-decoration: underline yellow dotted;
+}
+
+#parr2 h2 {
+    text-decoration: underline yellow dotted;
+}
+
+.grupoimg {
+    display: flex;
+    flex: calc(3);
+    justify-content: center;
+}
+
+.grupoimg2 {
+    display: flex;
+    flex: calc(3);
+    justify-content: center;
+}
+
+.agruimg p {
+    font-size: 10pt;
+    text-align: center;
+}
+
+.tamimg {
+    width: 180px;
+    height: 100px;
+}
+
+.agruimg {
+    margin: 10px;
+}
+
+.redlogo{
+    width: 15px;
+    height: 15px;
+}
+
+#parr1, #parr2 {
+    font-family: 'Dosis';
+}
