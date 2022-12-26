@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Montserrat&display=swap');
 
+* {
+    outline: 1px solid red;
+}
+
 fieldset {
     border-color: rgb(12, 12, 210);
     background-color: rgba(135, 207, 235, 0.174);
