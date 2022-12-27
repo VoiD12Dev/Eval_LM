@@ -9,13 +9,6 @@
     margin-bottom: 5px;
 }
 
-#art1, #art2 {
-    background-color:rgb(16, 99, 134);
-}
-#arteven{
-    text-align: center;
-}
-
 table {
     margin-left: 200px;
     text-align: left;
@@ -28,8 +21,6 @@ table {
 
 .parbody {
     float: left;
-    align-content: center;
-    font-family: 'Dosis';
     font-size: 14pt;
     text-align: justify;
     line-height: 25px;
@@ -55,10 +46,6 @@ table {
 .redlogo{
     width: 15px;
     height: 15px;
-}
-
-#parr1, #parr2 {
-    font-family: 'Dosis';
 }
 
 ul {

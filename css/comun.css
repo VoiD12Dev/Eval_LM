@@ -26,7 +26,6 @@ h1 {
 }
 
 nav{
-    font-family: 'Dosis';
     font-weight: bolder;
     text-align: center;
     background-color:rgb(35, 78, 103);
@@ -34,7 +33,6 @@ nav{
 }
 
 footer, p::selection{
-    font-family: 'Dosis';
     background-color: black;
     color: aliceblue;
     text-align: left;
