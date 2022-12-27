@@ -1,35 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
 
-*{
+/* *{
     outline: 1px solid red;
-}
+} */
 
 table {
     text-align: left;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
 }
 
-.tred{
-    background-color: red;
+#link2{
+    text-decoration: underline;
 }
 
 tfoot {
     text-align: center;
+    background-color: #FF3B3F;
 }
 
-#tabcen {
+.tabcen {
     text-align: center;
-    background-color: rgb(45, 49, 83);
+    background-color: #0A3143;
+    color: white;
+}
+
+.tred {
+    background-color: #FF3B3F;
 }
 
 .rclar {
-    background-color: tomato;
+    background-color: rgb(241, 121, 121);
 }
 
 .bcol {
-    border: 2px solid aqua;
+    border: 2px solid #CCEAF4;
 }
 
-#boor {
-    border: 2px solid aqua;
+.boor {
+    border: 2px solid #CCEAF4;
 }
 
 h2{
@@ -37,14 +51,54 @@ h2{
 }
 
 h3{
-    text-align: center;
+    text-align: left;
+    margin: 0px;
+    padding-top: 30px;
+    font-size: 25px;
+    padding-left: 220px;
 }
 
-#sec3 {
-    background-color: darkcyan;
+.sec3 {
+    background-color: #648da0;
+    box-sizing: border-box;
+    width: auto;
+    height: 300px;
+    margin-top: 50px;
 }
 
-#table1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10pt;
+.ul3 {
+    box-sizing: border-box;
+    width: 25%;
+    height: 20%;
+    float: left;
+    margin-left: 180px;
+}
+
+.ul4 {
+    box-sizing: border-box;
+    width: 25%;
+    height: 20%;
+    float:left;
+}
+
+.ul5 {
+    box-sizing: border-box;
+    width: 25%;
+    height: 20%;
+    float: left;
+}
+
+li{
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.sombreado {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 0 0 10px #6a7fc4 ;
+}
+
+.negri {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: small;
 }

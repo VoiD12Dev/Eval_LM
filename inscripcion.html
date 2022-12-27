@@ -11,7 +11,7 @@
 <body>
     <header>
         
-        <img id="logo1" src="/img/logo1.png" alt="logo1" height="100" width="150">
+        <img class="logo1" src="/img/logo1.png" alt="logo1" height="100" width="150">
 
         <h1>XXI CONGRESO DE <br> PERIODISMO DEL CEEDCV</h1>
 
@@ -34,91 +34,104 @@
                 <fieldset  class="fieldtopbot">
 
                     <p>
-                        <h4>Nombre completo:</h4>
+                        <h4>Datos personales:</h4>
                     </p>
 
                     <p>
-                        Nombre <span class="arterisco">*</span>: <input type="text" id="nombre" name="nombre" maxlength="15" required>
+                        Nombre <span class="arterisco">*</span>: <input type="text" id="nombre" name="nombre" minlength="2" maxlength="50" required pattern="[A-Za-z]{2,}">
                     </p>
 
                     <p>
-                        Apellidos <span class="arterisco">*</span>: <input type="text" id="apellidos" name="apellidos" maxlength="25" required>
+                        Apellidos <span class="arterisco">*</span>: <input type="text" id="apellidos" name="apellidos" minlength="2" maxlength="128" required pattern="[A-Za-z]{2,}+[A-Za-z]{2,}">
                     </p>
 
-                </fieldset>
-
-                <fieldset class="fieldtopbot">
-
-                    <p>
-                        <h4>Direccion:</h4>
-                    </p>
-
-                    <p>
-                        Calle: <input type="text" id="calle" name="calle" maxlength="50" >
-                    </p>
-
-                    <p>
-                        Localidad: <input type="text" id="localidad" name="localidad" maxlength="35">
-                    </p>
-
-                    <p>
-                        Provincia: <input type="text" id="provincia" name="provincia" maxlength="20">
-                    </p>
-
-                    <p>
-                        Codigo postal: <input type="text" id="cpostal" name="cpostal" maxlength="5">
-                    </p>
-
-                </fieldset>
-
-                <fieldset class="fieldtopbot">
-
-                    <p>
-                        <h4>Informacion complementaria:</h4>
-                    </p>
-
-                    <p>
-                        <form>
-                            <label for="email">Email <span class="arterisco">*</span>:</label>
-                            <input type="email" id="email" name="email" required>
-                        </form>
-                    </p>
-
-                    <p>
-                        DNI <span class="arterisco">*</span>: <input type="text" name="dni" id="dni" maxlength="9" required>
-                    </p>
+                        <label for="email">Email <span class="arterisco">*</span>:</label>
+                        <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9_.]+@[a-zA-Z0-9_]+[.][a-zA-Z]{1,5}">
 
                     <p>
                         Telefono <span class="arterisco">*</span>: <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" maxlength="9" required>
                     </p>
 
-                    <form>
-                        <p>
-                            Sexo:
-                            <input type="radio" id="hombre" name="sexo" value="hombre">
-                            <label for="hombre">Hombre</label>
-                            <input type="radio" id="mujer" name="sexo" value="mujer">
-                            <label for="mujer">Mujer</label>
-                        </p>
-                    </form>
+                        <label for="myfile">Adjuntar una foto: <br> </label> <br>
+                        <input type="file" id="myfile" name="myfile">
 
-                    <form>
-                        <p>
-                            Pase de prensa:
-                            <input type="radio" name="pase" id="si" value="si">
-                            <label for="si">Si</label>
-                            <input type="radio" name="pase" id="no" value="no">
-                            <label for="no">No</label>
-                        </p>
-                    </form>
+                    <p>
+                        <h4>Perfil de Usuario:</h4>
+                    </p>
+
+                    <p>
+                        <label for="observacions">Explica porque estas interesado en asistir a las jornadas <span class="arterisco">*</span>:</label>
+                    </p>
+                    <textarea name="observaciones" id="observaciones" cols="90" rows="8" required></textarea>
+
+                        <p>Actividad profesional <span class="arterisco">*</span>:</p>
+                            <input type="radio" id="EstudianteBachillerato" name="AP" value="EstudianteBachillerato" required>
+                            <label for="EstudianteBachillerato">Estudiante de Bachillerato</label> <br>
+                            <input type="radio" id="EstudianteUniversitario" name="AP" value="EstudianteUniversitario" required>
+                            <label for="EstudianteUniversitario">Estudiante Universitario</label> <br>
+                            <input type="radio" id="Doctorado" name="AP" value="Doctorado" required>
+                            <label for="Doctorado">Doctorado</label> <br>
+                            <input type="radio" id="ProfesionalInformatico" name="AP" value="ProfesionalInformatico" required>
+                            <label for="ProfesionalInformatico">Profesional Informatico</label> <br>
+                            <input type="radio" id="Profesor" name="AP" value="Profesor" required>
+                            <label for="Profesor">Profesor</label> <br>
+                            <input type="radio" id="Otros" name="AP" value="Otros" required>
+                            <label for="Otros">Otros</label>
+
+                        <p> Selecciona el/los talleres a los que deseas asistir <span class="arterisco">*</span>:<p>
+                            <input type="checkbox" id="taller1" name="taller1" value="ConferenciaInaugural">
+                            <label for="taller1"> Conferencia Inaugural, con Pepa Bueno</label><br>
+                            <input type="checkbox" id="taller2" name="taller1" value="MeseDeDebate">
+                            <label for="taller2"> Mesa de debate: "Enfocar en la epoca del periodismo desenfocado", con Jordi Evole</label><br>
+                            <input type="checkbox" id="taller3" name="taller1" value="DeLaMasDuraRealidad">
+                            <label for="taller3"> De la mas dura realidad a la ficcion. Periodismo social y literatura, con Antonio Garcia Ferreras</label><br>
+                            <input type="checkbox" id="taller4" name="taller1" value="LosRetosDel">
+                            <label for="taller4"> Los retos del fotoperiodismo en el mundo actual, con Gervasio Fernandez</label><br>
+                            <input type="checkbox" id="taller5" name="taller1" value="HistoriasDeUn">
+                            <label for="taller5"> Historias de un corresponsal, con Lorenzo Milla</label><br>
+                            <input type="checkbox" id="taller6" name="taller1" value="Informativos">
+                            <label for="taller6"> Informativos en TV: ¿Reinvencion o extincion?, con Matias Prats</label><br>
+                            <input type="checkbox" id="taller7" name="taller1" value="ElPeriodismo">
+                            <label for="taller7"> El periodismo del territorio, con Pedro Piqueras</label><br>
+                            <input type="checkbox" id="taller8" name="taller1" value="YoMeLoGuiso">
+                            <label for="taller8"> Yo me lo guiso, yo me los como, con Xavier Agullo</label><br>
+                            <input type="checkbox" id="taller9" name="taller1" value="RicoRico">
+                            <label for="taller9"> Rico, rico y bien contado, con Lopez Iturriaga</label><br>
+
+                        <p>Estoy interesado en asistir <span class="arterisco">*</span>:</p>
+                            <input type="radio" id="Los3Dias" name="asistence" value="Los3Dias" required>
+                            <label for="Los3Dias">Los 3 dias</label> <br>
+                            <input type="radio" id="11DeMarzo" name="asistence" value="11DeMarzo" required>
+                            <label for="11DeMarzo">11 de Marzo</label> <br>
+                            <input type="radio" id="12DeMarzo" name="asistence" value="12DeMarzo" required>
+                            <label for="12DeMarzo">12 de Marzo</label> <br>
+                            <input type="radio" id="13DeMarzo" name="asistence" value="13DeMarzo" required>
+                            <label for="13DeMarzo">13 de Marzo</label> <br>
+
+                    <p class="movlegend">
+                        El <span class="arterisco">*</span> significa campo obligatorio
+                    </p>
+
+                    <br>
+
+                        <input type="checkbox" name="condiciones" id="condiciones" required>
+                        <label for="condiciones"> He leido y acepto las la politica de privacidad y el aviso legal</label>
+
+                    <br> <br>
+
+                    <input class="extra" type="reset">
+
+                    <input class="extra" type="submit" value="Enviar"/>
+                
 
                 </fieldset>
             </fieldset>
         </form>
     </section>
 
+
     <footer>
-        <p id="textfoot">
+        <p class="textfoot">
             Actividad realizada por Miguel Ferrandiz Miro, para la asignatura de lenguaje de marcas <br>Primer trimestre 2022/23
         </p>
     </footer>
